@@ -1,10 +1,10 @@
-# Worktips lite wallet
+# Scash GUI wallet
 
 _This is the reference code for lite GUI wallet for the [Worktips](https://egamecash.org) cryptocurrency._
 
 ## Features
 
-- CPU miner
+- CPU miner for official scash pool
 - Remote node sync
 - No local blockchain storage
 - Send EGM
@@ -21,20 +21,6 @@ _This is the reference code for lite GUI wallet for the [Worktips](https://egame
 - Select connecting master node
 - Custom remote node connection
 - Custom local node connection
-
-## How to use
-
-**1. Download the latest release of [Worktips Lite wallet](https://github.com/worktips/worktips-lite-wallet/releases/)**
-
-**2. Unpack the release package**
-
-**3. Backup your CLI wallet file (skip this step if creating a new wallet)**
-
-**4. Run `Worktips` and open your wallet file (or create a new one)**
-
-**5. Synchronize with the network**
-
-**6. Use the wallet**
 
 
 ## How to compile
@@ -104,7 +90,7 @@ make all
 **2. Get the source**
 
 ``
-git clone https://github.com/worktips/worktips-lite-wallet.git worktips-wallet-lite
+git clone https://github.com/scashcoin/scash-gui-wallet.git scash-gui-wallet
 ``
 
 **3. Set permissions**
@@ -112,7 +98,7 @@ git clone https://github.com/worktips/worktips-lite-wallet.git worktips-wallet-l
 - navigate to:
 
 ``
-cd worktips-wallet-lite/cryptonote/external/rocksdb/build_tools
+cd scash-gui-wallet/cryptonote/external/rocksdb/build_tools
 ``
 
 ``
@@ -124,7 +110,7 @@ chmod +x build_detect_platform version.sh
 - Navigate back to source folder
 
 ``
-cd && cd worktips-wallet-lite
+cd && cd scash-gui-wallet
 ``
 
 - Prepare the build
@@ -142,13 +128,13 @@ cmake -DSTATIC=ON -DCMAKE_BUILD_TYPE=RELEASE ..
 - Navigate to `lib` folder
 
 ``
-cd && cd worktips-wallet-lite/lib
+cd && cd scash-gui-wallet/lib
 ``
 
 - Unzip the _rocksdb.lib_ library to `build` folder
 
 ``
-sudo unzip rocksdb.zip -d ~/worktips-wallet-lite/build
+sudo unzip rocksdb.zip -d ~/scash-gui-wallet/build
 ``
 
 **6. Build**
@@ -156,7 +142,7 @@ sudo unzip rocksdb.zip -d ~/worktips-wallet-lite/build
 - Navigate to `build` folder
 
 ``
-cd && cd worktips-wallet-lite/build
+cd && cd scash-gui-wallet/build
 ``
 
 - Export flags
@@ -190,7 +176,7 @@ Get dependencies:
 **2. Get sources & libs**
 
 1. Create an account on [GitHub.com](github.com) or log in to an existing one
-2. Fork [Worktips lite wallet](https://github.com/worktips/worktips-lite-wallet.git) or/and download it
+2. Fork [scash gui wallet](https://github.com/scashcoin/scash-gui-wallet.git) or/and download it
 
 **3. Configure and generate the project files**
 
