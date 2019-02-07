@@ -1,0 +1,3 @@
+set(CN_PROJECT_NAME "eGameCash")
+set(CN_CURRENCY_DISPLAY_NAME "egamecash")
+set(CN_CURRENCY_TICKER "EGM")
