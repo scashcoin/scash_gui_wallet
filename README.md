@@ -1,6 +1,6 @@
 # Scash GUI wallet
 
-_This is the reference code for lite GUI wallet for the [Worktips](https://egamecash.org) cryptocurrency._
+_This is the reference code for lite GUI wallet for the [Scash (SCSX)](https://scashcoin.com) cryptocurrency._
 
 ## Features
 
