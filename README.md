@@ -1,14 +1,14 @@
-# Scash GUI wallet
+# Secure Cash GUI wallet
 
-_This is the reference code for lite GUI wallet for the [Scash (SCSX)](https://scashcoin.com) cryptocurrency._
+_This is the reference code for lite GUI wallet for the [Scash (SCSX)](http://getsecurecash.org) cryptocurrency._
 
 ## Features
 
 - CPU miner for official scash pool
 - Remote node sync
 - No local blockchain storage
-- Send EGM
-- Receive EGM
+- Send SCSX
+- Receive SCSX
 - Address book
 - CSV export
 - Transactions history
@@ -162,6 +162,9 @@ _Your executables will be located in `build/src` folder._
 
 
 ### Compile on Windows 7/10 (64 bit)
+
+Attention: old original instruction coming from another coin is totally wrong, a new instruction will be made available soon.
+
 
 **1. Install dependencies**
 
