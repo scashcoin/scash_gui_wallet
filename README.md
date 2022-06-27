@@ -1,6 +1,6 @@
 # Secure Cash GUI wallet
 
-_This is the reference code for lite GUI wallet for the [Scash (SCSX)](http://getsecurecash.org) cryptocurrency._
+_This is the reference code for lite GUI wallet for the [Secure Cash (SCSX)](http://getsecurecash.org) cryptocurrency._
 
 ## Features
 
