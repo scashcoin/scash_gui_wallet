@@ -183,7 +183,8 @@ Get dependencies:
 
 - Fist edit CMakeLists.txt and add boost_1_65_1 and QT 5.10.0 directory.
 - Create 'build' directory.
-- start CMake GUI and navigate to the repository folder using the field _Where is the source code:_
+- add the Secure Cash source in the cryptonote folder (or replace if there is another source there).
+- start CMake GUI and navigate to the repository folder using the field _Where is the GUI Wallet source code:_
 - Click in configure, mark With_MD_Library, click in generate, after click in open project.
 - in Visual Studio 2015, click in rocksdb, project options, go to change Warning on Error: On to OFF.
 - Switch solution to `release` instead 'debug'
