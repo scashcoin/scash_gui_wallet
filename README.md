@@ -163,45 +163,32 @@ _Your executables will be located in `build/src` folder._
 
 ### Compile on Windows 7/10 (64 bit)
 
-Attention: old original instruction coming from another coin is totally wrong, a new instruction will be made available soon.
-
 
 **1. Install dependencies**
 
-Recommended: Microsoft Visual Studio 15 2017, CMake 3.1.x or later, Boost 1.65 or later and Qt 5.10.x
+Recommended: Microsoft Visual Studio 14 2015, CMake 3.11.1, Boost 1.65.1 and Qt 5.10.0
 
 Get dependencies:
 - http://www.microsoft.com
-- http://www.cmake.org
-- http://www.boost.org
-- https://www.qt.io
+- [http://www.cmake.org](https://cmake.org/files/v3.11/)
+- [http://www.boost.org](https://sourceforge.net/projects/boost/files/boost-binaries/1.65.1/)
+- [https://www.qt.io](https://download.qt.io/new_archive/qt/5.10/5.10.0/)
 
 **2. Get sources & libs**
 
 1. Create an account on [GitHub.com](github.com) or log in to an existing one
 2. Fork [scash gui wallet](https://github.com/scashcoin/scash-gui-wallet.git) or/and download it
 
-**3. Configure and generate the project files**
+**3. Configure, generate the project files, and Build**
 
+- Fist edit CMakeLists.txt and add boost_1_65_1 and QT 5.10.0 directory.
+- Create 'build' directory.
 - start CMake GUI and navigate to the repository folder using the field _Where is the source code:_
-- in the field _Where to build the binaries:_ specify the build folder location
-- click the _Configure_ button to start the configuration
-- confirm the creation of the `build` folder at the specified build folder location
-- select _Visual Studio 15 2017 Win64_ option.
-- click the _Finish_ button to run the configuration
-- after the configuration is done, click the _Generate_ button to generate your project files
-- after successfull generation click the button _Open project_ to start building the binaries
+- Click in configure, mark With_MD_Library, click in generate, after click in open project.
+- in Visual Studio 2015, click in rocksdb, project options, go to change Warning on Error: On to OFF.
+- Switch solution to `release` instead 'debug'
+- Build all project,ready, your Secure Cash GUI Wallet is build in directory 'build/release'.
 
-**4. Get rocksdb library**
 
-- IMPORTANT: Unzip the _rocksdb.zip_ located in the `lib` folder and put the unzipped file _rocksdb.lib_ inside the folder `build` that was specified during step 3.
+If you try to build this GUI Wallet with other versions of Visual Studio, QT and Boost, you might come across thousands of bugs and errors that don't make any sense, before finding this I spent days trying to figure out what the hell was going on.
 
-**5. Build**
-
-- CMake GUI will open the project in the Microsoft Visual Studio you selected for the configuration
-- wait for the Microsoft Visual Studio to scan and prepare all of the files for the project
-- the scan is finished when the message _Ready_ appears
-- Switch solution to `release`
-- click the _Build_ button from the main menu
-
-_Your binaries will be located in the `src/release` folder._
