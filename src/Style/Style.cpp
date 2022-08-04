@@ -48,23 +48,23 @@ QString Style::fontColorGray() const {
 }
 
 QString Style::fontColorGreen() const {
-  return "#e24412";
+  return "#3399ff";
 }
 
 QString Style::fontColorRed() const {
-  return "#ff2222";
+  return "#0066cc";
 }
 
 QString Style::fontColorBlueNormal() const {
-  return "#bb411b";
+  return "#3399ff";
 }
 
 QString Style::fontColorBlueHover() const {
-  return "#572200";
+  return "#0099ff";
 }
 
 QString Style::fontColorBluePressed() const {
-  return "#deec6d00";
+  return "#3399ff";
 }
 
 QString Style::backgroundColorGray() const {
@@ -76,15 +76,15 @@ QString Style::backgroundButtonColorGrayHover() const {
 }
 
 QString Style::backgroundColorBlueNormal() const {
-  return "#e24412";
+  return "#3399ff";
 }
 
 QString Style::backgroundColorBlueHover() const {
-  return "#ed8f71";
+  return "#99ccff";
 }
 
 QString Style::backgroundColorBluePressed() const {
-  return "#b94926";
+  return "#0066cc";
 }
 
 QString Style::backgroundColorBlueDisabled() const {
