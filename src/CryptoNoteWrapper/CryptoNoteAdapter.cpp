@@ -356,7 +356,7 @@ void CryptoNoteAdapter::initNode() {
 // masternode 1 auto connection
 void CryptoNoteAdapter::initAutoConnection() {
   WalletLogger::debug(tr("[CryptoNote wrapper] connecting...").arg(CryptoNote::RPC_DEFAULT_PORT));
-  m_nodeAdapter = new ProxyRpcNodeAdapter(m_currency, m_coreLogger, m_walletLogger, "51.161.34.8", CryptoNote::RPC_DEFAULT_PORT, this);
+  m_nodeAdapter = new ProxyRpcNodeAdapter(m_currency, m_coreLogger, m_walletLogger, "node.getsecurecash.org", CryptoNote::RPC_DEFAULT_PORT, this);
   m_nodeAdapter->addObserver(this);
   m_autoConnectionTimerId = startTimer(AUTO_CONNECTION_INTERVAL);
   m_nodeAdapter->init();
